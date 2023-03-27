@@ -17,7 +17,7 @@ const EmojiContainer = ({ search, limit }) => {
             setServerEmojis(emojis)
         })
     }
-    
+
     useEffect(() => updateServerEmojis(), []);
 
     const filteredEmojis = serverEmojis.filter(emoji => emoji.title.toLowerCase().includes(search) || emoji.keywords.toLowerCase().includes(search));

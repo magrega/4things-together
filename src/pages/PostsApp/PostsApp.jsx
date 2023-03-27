@@ -41,7 +41,7 @@ function PostsApp() {
   }, [page]);
 
   if (loading) {
-    return  <div className='initialSpinner'><CircularProgress color="success" /></div>;
+    return <div className='initialSpinner'><CircularProgress color="success" /></div>;
   }
 
   return (
@@ -61,7 +61,7 @@ function PostsApp() {
           }
         </PostsContainer>
 
-        {posts?.length < totalCount &&  <LoadingButton
+        {posts?.length < totalCount && <LoadingButton
           color="error"
           onClick={showMore}
           loading={isButtonLoading}
@@ -70,8 +70,8 @@ function PostsApp() {
           <span>Show More</span>
         </LoadingButton>}
       </Box>
-      
-      <AuthorModal open={openModal} setOpen={setOpenModal} userModal={userModal} setUserModal={setUserModal} isModalLoading={isModalLoading}/>
+
+      <AuthorModal open={openModal} setOpen={setOpenModal} userModal={userModal} setUserModal={setUserModal} isModalLoading={isModalLoading} />
     </>
   );
 }

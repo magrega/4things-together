@@ -4,9 +4,9 @@ import Tasks from '../../components/ToDo/Tasks/Tasks';
 import './ToDoApp.css';
 
 function ToDoApp() {
-  const [tasks, setTasks] = useState([ {todo: "make this app", id: 1}, {todo: "make classes work", id: 2}, {todo: "polish the code", id: 3}, { todo: "fix bugs", id: 4}]);
+  const [tasks, setTasks] = useState([{ todo: "make this app", id: 1 }, { todo: "make classes work", id: 2 }, { todo: "polish the code", id: 3 }]);
 
-  const [ids, setIds] = useState(5);
+  const [ids, setIds] = useState(4);
 
   const removeTodoItem = (id) => {
     const newToDo = tasks.filter(task => task.id !== id);
@@ -14,10 +14,10 @@ function ToDoApp() {
   }
 
   return (
-    <div className="App">
+    <div className="ToDoApp">
       <h1>To Do List</h1>
-      <Form setTasks={setTasks} setIds={setIds} ids={ids}/>
-      <Tasks tasks={tasks} removeTodoItem={removeTodoItem}/>
+      <Form setTasks={setTasks} setIds={setIds} ids={ids} />
+      <Tasks tasks={tasks} removeTodoItem={removeTodoItem} />
     </div>
   );
 }

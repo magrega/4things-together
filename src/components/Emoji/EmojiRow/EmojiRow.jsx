@@ -1,6 +1,6 @@
 import './EmojiRow.css';
 
-const EmojiRow = ({item, index}) => {
+const EmojiRow = ({ item }) => {
 
     return (
         <div className="EmojiRow">

@@ -37,7 +37,7 @@ export default function AuthorModal({ open, setOpen, userModal, isModalLoading }
     <Typography marginTop={2}>
       {userModal?.phone}
     </Typography>
-    </>
+  </>
 
   return (
     <Modal

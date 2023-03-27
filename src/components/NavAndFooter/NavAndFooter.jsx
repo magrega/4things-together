@@ -13,7 +13,7 @@ const NavAndFooter = () => {
             </header>
 
             <main>
-                <Outlet/>
+                <Outlet />
             </main>
 
             <footer>
