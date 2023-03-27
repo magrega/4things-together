@@ -1,9 +1,11 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
+import NotFound from '../components/Emoji/NotFound/NotFound';
 import NavAndFooter from '../components/NavAndFooter/NavAndFooter';
 import Counter from './Counter';
 import EmojiApp from './EmojiApp/EmojiApp';
 import Home from './Home';
 import PostsApp from './PostsApp/PostsApp';
+import ToDoApp from './ToDoApp/ToDoApp';
 
 export const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={<NavAndFooter />}>
@@ -11,5 +13,8 @@ export const router = createBrowserRouter(createRoutesFromElements(
         <Route path='counter' element={<Counter counter={0}/>} />
         <Route path='emojilist' element={<EmojiApp/>} />
         <Route path='postsbyusers' element={<PostsApp/>} />
+        <Route path='todo' element={<ToDoApp/>} />
+        <Route path="*" element={<NotFound />} />
     </Route>
+    
 ))

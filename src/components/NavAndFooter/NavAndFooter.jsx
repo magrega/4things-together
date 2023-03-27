@@ -9,6 +9,7 @@ const NavAndFooter = () => {
                 <NavLink to="/counter">Counter</NavLink>
                 <NavLink to="/emojilist">Emoji list</NavLink>
                 <NavLink to="/postsbyusers">Posts</NavLink>
+                <NavLink to="/todo">To Do</NavLink>
             </header>
 
             <main>
