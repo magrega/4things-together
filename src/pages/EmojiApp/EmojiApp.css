@@ -1,0 +1,10 @@
+#root {
+  background-color: beige;
+  min-height: 100vh;
+}
+
+.EmojiApp {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
