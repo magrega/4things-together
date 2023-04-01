@@ -1,10 +1,9 @@
-#root {
-  background-color: beige;
-  min-height: 100vh;
-}
-
-.EmojiApp {
+.emoji-app {
   width: 500px;
   margin: 0 auto;
   text-align: center;
+}
+
+html {
+  /* overflow: scroll; */
 }

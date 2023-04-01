@@ -1,9 +1,9 @@
 import LoadingButton from '@mui/lab/LoadingButton';
 import { Box, CircularProgress } from '@mui/material';
 import { useEffect, useState } from 'react';
-import AuthorModal from '../../components/postsbyusers/AuthorModal/AuthorModal';
-import Post from "../../components/postsbyusers/Post/Post";
-import PostsContainer from '../../components/postsbyusers/PostsContainer/PostsContainer';
+import AuthorModal from './PostsByUsers/AuthorModal/AuthorModal';
+import Post from "./PostsByUsers/Post/Post";
+import PostsContainer from './PostsByUsers/PostsContainer/PostsContainer';
 import { getPosts } from '../../services/getData';
 
 import './PostApp.css';
@@ -41,12 +41,12 @@ function PostsApp() {
   }, [page]);
 
   if (loading) {
-    return <div className='initialSpinner'><CircularProgress color="success" /></div>;
+    return <div className='initial-spinner'><CircularProgress color="success" /></div>;
   }
 
   return (
     <>
-      <Box className="PostsApp">
+      <Box className="posts-app">
         <PostsContainer>
           {
             posts?.map((post) => {

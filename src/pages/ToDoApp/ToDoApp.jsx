@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Form from '../../components/ToDo/Form/Form';
-import Tasks from '../../components/ToDo/Tasks/Tasks';
+import Form from './ToDo/Form/Form';
+import Tasks from './ToDo/Tasks/Tasks';
 import './ToDoApp.css';
 
 function ToDoApp() {
@@ -14,7 +14,7 @@ function ToDoApp() {
   }
 
   return (
-    <div className="ToDoApp">
+    <div className="todo-app">
       <h1>To Do List</h1>
       <Form setTasks={setTasks} setIds={setIds} ids={ids} />
       <Tasks tasks={tasks} removeTodoItem={removeTodoItem} />
