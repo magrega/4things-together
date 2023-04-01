@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+.container > * {
+    padding-left: calc(100vw - 100%);
+}
+
 header {
     background-color: #9ee493;
     padding: 10px 0;

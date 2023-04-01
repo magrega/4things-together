@@ -1,3 +1,7 @@
 .App {
   text-align: center;
 }
+
+.scroll-bar-fix {
+  padding-left: calc(100vw - 100%);
+}
