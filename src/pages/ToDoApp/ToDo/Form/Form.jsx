@@ -16,10 +16,10 @@ const Form = ({ setTasks, setIds, ids }) => {
     }
 
     return (
-            <form>
-                <input type="text" onChange={onFormChange} value={formValue} />
-                <button onClick={onAddTask} type="submit">add</button>
-            </form>
+        <form>
+            <input type="text" onChange={onFormChange} value={formValue} />
+            <button onClick={onAddTask} type="submit">add</button>
+        </form>
     );
 };
 
